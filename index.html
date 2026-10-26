@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+  <title>George Jabbour's Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Thin line at the top that fills up as you scroll -->
+  <div class="progress"></div>
+
+  <header>
+    <div class="brand">George Jabbour</div>
+
+    <!-- Hamburger button: only visible on smaller screens -->
+    <div class="menu-toggle">
+      <!-- From Uiverse.io by Subu19 -->
+      <div class="hamburger">
+        <input class="checkbox" type="checkbox" id="menu-toggle" aria-label="Open menu" aria-expanded="false" />
+        <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+          <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black" d="M6 11L44 11"></path>
+          <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line"></path>
+          <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43" class="lineBottom line"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="menu" id="menu">
+      <div class="nav_bar">
+        <nav>
+          <ul class="nav_links">
+            <li>
+              <a href="#home" data-nav="home"><i class="ri-home-2-fill"></i></a>
+              <div class="tooltip" data-ar="الرئيسية">Home</div>
+            </li>
+            <li>
+              <a href="#skills" data-nav="skills"><i class="ri-tools-fill"></i></a>
+              <div class="tooltip" data-ar="المهارات">Skills</div>
+            </li>
+            <li>
+              <!-- The Projects pages (Other Projects + Creator growth) share this icon -->
+              <a href="#projects" data-nav="projects"><i class="ri-folder-5-fill"></i></a>
+              <div class="tooltip" data-ar="المشاريع">Projects</div>
+            </li>
+            <li>
+              <a href="#experience" data-nav="experience"><i class="ri-building-2-fill"></i></a>
+              <div class="tooltip" data-ar="الخبرات">Experience</div>
+            </li>
+            <li>
+              <a href="#certifications" data-nav="certifications"><i class="ri-award-fill"></i></a>
+              <div class="tooltip" data-ar="الشهادات">Certifications</div>
+            </li>
+            <li>
+              <a href="#contact" data-nav="contact"><i class="ri-mail-fill"></i></a>
+              <div class="tooltip" data-ar="تواصل معي">Contact</div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="controls">
+        <div class="lang">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">عربي</button>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="theme-switch" aria-label="Dark mode" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="home" data-nav="home">
+
+    <div class="text-changer">
+      <div class="roles-container">
+        <span class="roles">Hello!</span>
+        <span class="roles">Hola!</span>
+        <span class="roles">Marhaba!</span>
+        <span class="roles">Kamusta!</span>
+        <span class="roles">Bonjour!</span>
+        <span class="roles">Hello!</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="terminal_toolbar">
+        <div class="butt">
+          <button class="btn btn-color"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+        <p class="user">Python: ~</p>
+        <button class="add_tab">+</button>
+      </div>
+      <div class="terminal_body">
+        <div class="terminal_promt">
+          <span class="terminal_user">name =</span>
+          <span class="terminal_location">"George E Jabbour"</span>
+        </div>
+        <div class="terminal_promt">
+          <span class="terminal_user">role =</span>
+          <span class="terminal_location" data-ar="&quot;طالب الأمن السيبراني&quot;">"Cybersecurity Student"</span>
+        </div>
+        <div class="terminal_promt">
+          <span class="terminal_user">status =</span>
+          <span class="terminal_location" data-ar="&quot;متاح لفرص التدريب&quot;">"Open to Internships"</span>
+        </div>
+        <div class="terminal_promt">
+          <span class="terminal_user">interests =</span>
+          <span class="terminal_location">["Cybersecurity", "Web Development"]</span>
+        </div>
+        <div class="terminal_promt">
+          <span class="terminal_user">languages =</span>
+          <span class="terminal_location">["Python", "JavaScript", "SQL"]</span>
+        </div>
+        <div class="terminal_promt">
+          <span class="terminal_user">focus =</span>
+          <span class="terminal_location" data-ar="&quot;بناء مشاريع عملية&quot;">"Building Practical Projects"</span>
+          <span class="terminal_cursor"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- The PDF (CV.pdf) must sit in the same folder as index.html -->
+    <div class="resume">
+      <a href="CV.pdf" download="George-Jabbour-CV.pdf" data-ar="تحميل السيرة الذاتية">Download Résumé</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/Grjii" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+      <a href="https://www.linkedin.com/in/george-jabbour-a26514338" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+      <a href="https://www.instagram.com/grgejbbr/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+    </div>
+
+  </main>
+
+  <!-- Skills -->
+  <section class="skills page" id="skills" data-nav="skills">
+    <div class="skills-inner">
+
+      <div class="skills-content">
+        <div class="subtitle-wrap">
+          <p class="section-subtitle" data-ar="مهاراتي">My skills</p>
+        </div>
+
+        <div class="skills-text">
+          <h2 class="section-title" data-ar="مجموعة مهاراتي <span class='hl'>التقنية</span>">My <span class="hl">Technical</span> Skill Set</h2>
+          <p class="section-text" data-ar="من تطوير البرمجيات وإدارة قواعد البيانات إلى مونتاج الفيديو والمحاكاة الافتراضية، أستخدم مجموعة متنوعة من الأدوات والتقنيات لتحويل الأفكار إلى واقع.">
+            From software development and database management to video editing and virtualisation, I use a diverse range of tools and technologies to bring ideas to life.
+          </p>
+        </div>
+      </div>
+
+      <ul class="skills-list">
+        <li><div class="skill-card"><div class="tooltip">VS Code</div><i class="ri-code-box-fill" style="color: #23a9f2;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">CSS</div><i class="ri-css3-fill" style="color: #5b7cff;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">JavaScript</div><i class="ri-javascript-fill" style="color: #f7df1e;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">Python</div><i class="ri-terminal-box-fill" style="color: #ffd43b;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">DaVinci Resolve</div><i class="ri-clapperboard-fill" style="color: #ff4d6d;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">Microsoft 365</div><i class="ri-microsoft-fill" style="color: #ff7a2f;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">MongoDB</div><i class="ri-database-2-fill" style="color: #4fb04f;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">SQLite</div><i class="ri-database-fill" style="color: #3b9ede;"></i></div></li>
+        <li><div class="skill-card"><div class="tooltip">VirtualBox</div><i class="ri-computer-fill" style="color: #9f8cff;"></i></div></li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects page" id="projects" data-nav="projects">
+
+    <p class="projects-label" data-ar="مشاريعي">My projects</p>
+    <h2 class="projects-title" data-ar="مشاريع أخرى">Other Projects</h2>
+
+    <div class="projects-list">
+
+      <!-- Project card: copy this whole block to add another project.
+           The preview is a "brand stage": the project's logo on a tile over a soft colored glow.
+           Pick the glow with the class on .preview (brand-at = red, brand-falcon = gold),
+           or add your own in the CSS (search for "BRAND STAGE"). -->
+      <article class="project-card">
+        <div class="browser-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="browser-url">grjii.github.io/A-T-Practice-Project</span>
+        </div>
+
+        <div class="preview brand-at">
+          <div class="logo-badge logo-wide">
+            <img src="AT-Logo.png" alt="A&amp;T Events &amp; Exhibitions logo">
+          </div>
+          <span class="preview-tag" data-ar="فعاليات ومعارض">Events &amp; Exhibitions</span>
+
+          <div class="reveal">
+            <p data-ar="موقع معرض أعمال لشركة هندسة وتصميم في دبي، يعرض المشاريع البارزة والخبرات وفريق العمل مع نموذج للتواصل.">A portfolio website for a Dubai architecture and design firm, showcasing prominent projects, expertise and the crew, with a contact sign-up.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a class="visit-btn" href="https://grjii.github.io/A-T-Practice-Project/" target="_blank" rel="noopener noreferrer" data-ar="زيارة الموقع">Visit Website</a>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h3 data-ar="مشروع A&amp;T التدريبي">A&amp;T Practice Project</h3>
+          <p class="hint"><i class="ri-cursor-fill"></i> <span data-ar="مرّر المؤشر أو المس للاستكشاف">Hover or tap to explore</span></p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="browser-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="browser-url">grjii.github.io/Falcon-Gym</span>
+        </div>
+
+        <div class="preview brand-falcon">
+          <div class="logo-badge logo-round">
+            <img src="FalconTop_Gym_Logo.jpg" alt="Falcon Top Gym logo">
+          </div>
+          <span class="preview-tag" data-ar="كيك بوكسينغ · كاراتيه · تدريب">Kickboxing · Karate · Training</span>
+
+          <div class="reveal">
+            <p data-ar="موقع نادٍ رياضي في دبي للكيك بوكسينغ والكاراتيه والتدريب الشخصي، مع الحصص وخطط العضوية ونموذج للاستفسار.">A Dubai gym website for kickboxing, karate and personal training, with class details, membership plans and an inquiry form.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a class="visit-btn" href="https://grjii.github.io/Falcon-Gym/" target="_blank" rel="noopener noreferrer" data-ar="زيارة الموقع">Visit Website</a>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h3 data-ar="مشروع فالكون توب جيم التدريبي">FalconTop Gym Practice Project</h3>
+          <p class="hint"><i class="ri-cursor-fill"></i> <span data-ar="مرّر المؤشر أو المس للاستكشاف">Hover or tap to explore</span></p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Creator growth.
+       The account names, handles, links and numbers are REAL (except the Instagram milestones, see below).
+       Header pattern matches the other pages: teal label on top, white heading underneath. -->
+  <section class="growth page" id="growth" data-nav="projects">
+
+    <p class="growth-label" data-ar="نمو المبدعين">Creator Growth</p>
+    <h2 class="growth-title" data-ar="مساعدة المبدعين على النمو">Helping Creators Grow</h2>
+    <p class="growth-text" data-ar="ساعدتُ في تنمية حسابات حقيقية على يوتيوب وإنستغرام وتيك توك. هذه ثلاثة منها.">
+      I helped grow real accounts on YouTube, Instagram and TikTok. Here are three of them.
+    </p>
+
+    <div class="growth-stage">
+
+      <!-- 1) YouTube channel: Top5Online -->
+      <article class="growth-item">
+        <div class="window">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="browser-url">youtube.com/@Top-5Online</span>
+          </div>
+
+          <div class="yt-banner"></div>
+          <div class="yt-head">
+            <!-- Profile picture: save the image next to index.html as top5online_instagram.png
+                 (the exact name matters: same spelling, underscore, lowercase, and a single .png).
+                 index.js also tries a few similar names automatically, and shows "T5" if none are found. -->
+            <div class="yt-avatar"><img src="top5online_instagram.png" alt="Top5Online logo"></div>
+            <div class="yt-info">
+              <h4>Top5Online</h4>
+              <p><b>1,200</b> <span data-ar="مشترك">subscribers</span></p>
+            </div>
+            <span class="yt-sub" data-ar="اشتراك">Subscribe</span>
+          </div>
+
+          <p class="yt-label" data-ar="أبرز الفيديوهات">Top videos</p>
+
+          <!-- Designed video cards (rank + play button + views).
+               OPTIONAL real thumbnails: put the video's ID (the part after "watch?v=") inside data-video="".
+               If the ID is wrong or left as VIDEO_ID_x, the designed card simply stays. -->
+          <div class="yt-videos">
+            <div class="yt-video" data-video="VIDEO_ID_1">
+              <span class="yt-rank">#1</span>
+              <i class="ri-play-fill yt-play"></i>
+              <span class="yt-views"><b>4.4M</b><small data-ar="مشاهدة">views</small></span>
+            </div>
+            <div class="yt-video" data-video="VIDEO_ID_2">
+              <span class="yt-rank">#2</span>
+              <i class="ri-play-fill yt-play"></i>
+              <span class="yt-views"><b>2.5M</b><small data-ar="مشاهدة">views</small></span>
+            </div>
+            <div class="yt-video" data-video="VIDEO_ID_3">
+              <span class="yt-rank">#3</span>
+              <i class="ri-play-fill yt-play"></i>
+              <span class="yt-views"><b>1.3M</b><small data-ar="مشاهدة">views</small></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="growth-caption"><i class="ri-youtube-fill"></i> <span data-ar="قناة يوتيوب">YouTube channel</span></p>
+        <p class="growth-result" data-ar="من 0 إلى 9.5 مليون مشاهدة خلال 5 أشهر">0 → 9.5M views in 5 months</p>
+        <a class="growth-visit" href="https://www.youtube.com/@Top-5Online" target="_blank" rel="noopener noreferrer" data-ar="زيارة القناة">Visit channel</a>
+      </article>
+
+      <!-- 2) Instagram account: kuappo_mc, shown on a phone as an interactive GROWTH TIMELINE.
+            Drag the slider (or tap a milestone chip) to travel from Day 1 to Now: the counter, the chart,
+            the time pill and the caption all follow. "Replay" plays the whole journey again.
+            TO EDIT THE NUMBERS: on each chip, data-value = followers and data-month = months it took to get there.
+            Then update the matching caption text below. The first chip should stay 0 / 0 and the last one is
+            your real follower count and total time. -->
+      <article class="growth-item phone-item">
+        <div class="phone" id="phone">
+          <span class="phone-notch"></span>
+          <span class="phone-side-btn"></span>
+
+          <div class="phone-screen">
+            <div class="gx" id="gx">
+
+              <!-- Profile header.
+                   Profile picture: save the image next to index.html as "custom-ava (1).png" (or rename it to custom-ava.png).
+                   index.js tries a few similar names, and keeps the "K" letter if none are found. -->
+              <div class="gx-head">
+                <div class="gx-avatar"><span>K<img src="Profile-Picture.png" alt="kuappo_mc profile picture"></span></div>
+                <div class="gx-who">
+                  <b>kuappo_mc</b>
+                  <small data-ar="رحلة النمو">Growth journey</small>
+                </div>
+                <i class="ri-instagram-fill gx-logo"></i>
+              </div>
+
+              <!-- The big follower counter + how long it took to get there -->
+              <div class="gx-main">
+                <b class="gx-num" id="gx-num">7,500</b>
+                <span class="gx-label" data-ar="متابع">followers</span>
+                <div class="gx-time"><i class="ri-timer-flash-fill"></i><span id="gx-time">In 8 months</span></div>
+              </div>
+
+              <!-- Captions: only the one matching the current stage is visible (one per chip, same order) -->
+              <div class="gx-caps">
+                <p class="gx-cap" data-ar="اليوم 1: كل شيء يبدأ من الصفر.">Day 1: everything starts from zero.</p>
+                <p class="gx-cap" data-ar="أول ألف متابع.">The first thousand followers.</p>
+                <p class="gx-cap" data-ar="خمسة آلاف متابع ونحن مستمرون.">Five thousand and counting.</p>
+                <p class="gx-cap active" data-ar="الآن: في نمو مستمر!">Now: still growing!</p>
+              </div>
+
+              <!-- The growth chart: the line is drawn by index.js -->
+              <div class="gx-chart-wrap">
+                <svg class="gx-chart" viewBox="0 0 204 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="gxStroke" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="204" y2="0">
+                      <stop offset="0" stop-color="#2bd4e8"/>
+                      <stop offset="0.55" stop-color="#ffffff"/>
+                      <stop offset="1" stop-color="#ff4d6d"/>
+                    </linearGradient>
+                    <linearGradient id="gxFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#ffffff" stop-opacity="0.32"/>
+                      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <line x1="0" y1="24" x2="204" y2="24" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                  <line x1="0" y1="48" x2="204" y2="48" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                  <line x1="0" y1="72" x2="204" y2="72" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+                  <path class="gx-ghost" id="gx-ghost"/>
+                  <path class="gx-area" id="gx-area" fill="url(#gxFill)"/>
+                  <path class="gx-line" id="gx-line"/>
+                  <g id="gx-marks"></g>
+
+                  <circle class="gx-ring" id="gx-ring" r="5" fill="#ff4d6d"/>
+                  <circle class="gx-dot" id="gx-dot" r="4.5"/>
+                </svg>
+              </div>
+
+              <!-- The slider (drag it!) -->
+              <input class="gx-range" id="gx-range" type="range" min="0" max="300" step="any" value="300" aria-label="Growth timeline">
+
+              <!-- Milestone chips: tap one to jump there.
+                   data-value = followers, data-month = months it took to reach that number -->
+              <div class="gx-chips">
+                <button type="button" class="gx-chip" data-value="0" data-month="0" data-ar="اليوم 1">Day 1</button>
+                <button type="button" class="gx-chip" data-value="1000" data-month="2">1K</button>
+                <button type="button" class="gx-chip" data-value="5000" data-month="5">5K</button>
+                <button type="button" class="gx-chip active" data-value="7500" data-month="8" data-ar="الآن">Now</button>
+              </div>
+
+              <!-- Bottom button -->
+              <div class="gx-foot">
+                <button type="button" class="gx-replay" id="gx-replay"><i class="ri-restart-line"></i> <span data-ar="إعادة">Replay</span></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <p class="growth-caption"><i class="ri-instagram-fill"></i> <span data-ar="حساب إنستغرام">Instagram account</span></p>
+        <p class="growth-result" data-ar="من 0 إلى 7.5 ألف متابع خلال 8 أشهر">0 → 7.5K followers in 8 months</p>
+        <p class="growth-hint"><i class="ri-arrow-left-right-line"></i> <span data-ar="اسحب الشريط أو المس إنجازًا لاستكشاف النمو">Drag the slider or tap a milestone to explore</span></p>
+        <a class="growth-visit" href="https://www.instagram.com/kuappo_mc" target="_blank" rel="noopener noreferrer" data-ar="زيارة الحساب">Visit account</a>
+      </article>
+
+      <!-- 3) TikTok account: kuappo_mc -->
+      <article class="growth-item">
+        <div class="window">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="browser-url">TikTok Analytics · @kuappo_mc</span>
+          </div>
+
+          <div class="tt-body">
+            <!-- Time badge: shows that all of this happened in under 6 months -->
+            <div class="tt-badge">
+              <i class="ri-timer-flash-fill"></i>
+              <span data-ar="كل هذا خلال أقل من 6 أشهر">All achieved in under 6 months</span>
+            </div>
+
+            <!-- data-suffix / data-prefix are added to the number while it counts up -->
+            <div class="tt-stats">
+              <div class="tt-stat">
+                <span class="tt-label" data-ar="المشاهدات">Views</span>
+                <b class="counter" data-count="245" data-suffix="K">245K</b>
+                <span class="tt-up"><i class="ri-arrow-up-line"></i><span class="counter" data-count="485" data-prefix="+" data-suffix="%" data-plain="true">+485%</span></span>
+              </div>
+              <div class="tt-stat">
+                <span class="tt-label" data-ar="المتابعون">Followers</span>
+                <b class="counter" data-count="700">700</b>
+                <span class="tt-up"><i class="ri-arrow-up-line"></i><span class="counter" data-count="417" data-prefix="+" data-suffix="%" data-plain="true">+417%</span></span>
+              </div>
+              <div class="tt-stat">
+                <span class="tt-label" data-ar="الإعجابات">Likes</span>
+                <b class="counter" data-count="75" data-suffix="K">75K</b>
+                <span class="tt-up"><i class="ri-arrow-up-line"></i><span class="counter" data-count="1710" data-prefix="+" data-suffix="%" data-plain="true">+1710%</span></span>
+              </div>
+            </div>
+
+            <p class="tt-chart-title" data-ar="نمو المشاهدات خلال 6 أشهر">Views growth over 6 months</p>
+            <div class="tt-chart">
+              <span class="bar" style="--h: 10%;"></span>
+              <span class="bar" style="--h: 14%;"></span>
+              <span class="bar" style="--h: 18%;"></span>
+              <span class="bar" style="--h: 26%;"></span>
+              <span class="bar" style="--h: 38%;"></span>
+              <span class="bar" style="--h: 52%;"></span>
+              <span class="bar" style="--h: 74%;"></span>
+              <span class="bar" style="--h: 100%;"></span>
+            </div>
+
+            <!-- Little timeline under the chart, from Month 1 to Month 6 -->
+            <div class="tt-timeline">
+              <span data-ar="الشهر 1">Month 1</span>
+              <span class="tt-line"></span>
+              <span data-ar="الشهر 6">Month 6</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="growth-caption"><i class="ri-tiktok-fill"></i> <span data-ar="حساب تيك توك">TikTok account</span></p>
+        <p class="growth-result" data-ar="من 0 إلى 75 ألف إعجاب خلال 6 أشهر">0 → 75K likes in 6 months</p>
+        <a class="growth-visit" href="https://www.tiktok.com/@kuappo_mc" target="_blank" rel="noopener noreferrer" data-ar="زيارة الحساب">Visit account</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Experience.
+       Two kinds of roles: Work and Volunteer (no internships yet, so there is no Internship filter).
+       To add a role: copy one .exp-tab button AND one .exp-panel block, with a new matching id (exp4, exp5...).
+       data-type on the tab must be "work" or "volunteer".
+       To bring back internships later: add a filter button  <button class="exp-chip" data-filter="internship" data-ar="تدريب">Internship</button>
+       and give the new tab data-type="internship". -->
+  <section class="experience page" id="experience" data-nav="experience">
+
+    <p class="experience-label" data-ar="خبراتي">My experience</p>
+    <h2 class="experience-title" data-ar="أين عملت وماذا تعلمت">Where I've Worked &amp; What I Learned</h2>
+    <p class="experience-text" data-ar="اختر دورًا من القائمة لفتح تفاصيله، أو استخدم الفلاتر وأزرار الأسهم للتنقل بين الخبرات.">
+      Pick a role from the timeline to open its details, or use the filters and arrow keys to browse.
+    </p>
+
+    <div class="exp-filters">
+      <button class="exp-chip active" data-filter="all" data-ar="الكل">All</button>
+      <button class="exp-chip" data-filter="work" data-ar="عمل">Work</button>
+      <button class="exp-chip" data-filter="volunteer" data-ar="تطوع">Volunteer</button>
+    </div>
+
+    <div class="exp-layout">
+
+      <!-- Left: the timeline (click a role) -->
+      <div class="exp-tabs" role="tablist">
+        <button type="button" class="exp-tab active" role="tab" data-exp="exp1" data-type="work" data-file="host-airmaniax.txt">
+          <span class="exp-dot"></span>
+          <span class="exp-tab-text">
+            <b data-ar="مضيف">Host</b>
+            <small data-ar="AirManiax · أكتوبر 2024 - يناير 2025">AirManiax · Oct 2024 - Jan 2025</small>
+          </span>
+        </button>
+
+        <button type="button" class="exp-tab" role="tab" data-exp="exp2" data-type="volunteer" data-file="event-support-forbes.txt">
+          <span class="exp-dot"></span>
+          <span class="exp-tab-text">
+            <b data-ar="متطوع دعم الفعاليات">Event Support Volunteer</b>
+            <small data-ar="فوربس · شتاء 2025">Forbes · Winter 2025</small>
+          </span>
+        </button>
+
+        <button type="button" class="exp-tab" role="tab" data-exp="exp3" data-type="volunteer" data-file="ceremony-assistant-bath-spa.txt">
+          <span class="exp-dot"></span>
+          <span class="exp-tab-text">
+            <b data-ar="مساعد حفل التخرج">Ceremony Assistant</b>
+            <small data-ar="جامعة باث سبا · صيف 2026">Bath Spa University · Summer 2026</small>
+          </span>
+        </button>
+      </div>
+
+      <!-- Right: a readable role card (no more terminal) + arrow buttons -->
+      <div class="exp-detail">
+        <div class="exp-card">
+          <div class="exp-card-top"><i class="ri-file-text-line"></i><span id="exp-url">~/experience/host-airmaniax.txt</span></div>
+
+          <div class="exp-stage">
+
+            <!-- 1) Work: Host at AirManiax -->
+            <div class="exp-panel active" id="exp1">
+              <span class="exp-type" data-ar="عمل">Work</span>
+              <h3 class="exp-role" data-ar="مضيف">Host</h3>
+              <p class="exp-meta">
+                <span><i class="ri-building-2-fill"></i> <span>AirManiax</span></span>
+                <span><i class="ri-calendar-line"></i> <span data-ar="أكتوبر 2024 - يناير 2025">Oct 2024 - Jan 2025</span></span>
+              </p>
+              <p class="exp-sub" data-ar="ما أنجزته">What I did</p>
+              <ul class="exp-points">
+                <li data-ar="أشرفت على الأطفال خلال الأنشطة، وحرصت على سلامتهم والتزام قواعد المتنزه.">Supervised children during activities, ensuring their safety and following park rules.</li>
+                <li data-ar="ساعدت الزبائن وقدمت لهم الإرشاد لضمان تجربة زيارة إيجابية.">Assisted customers and provided guidance to ensure a positive visitor experience.</li>
+                <li data-ar="طورت مهارات التواصل والعمل الجماعي وحل المشكلات في بيئة سريعة الوتيرة.">Developed communication, teamwork, and problem-solving skills in a fast-paced environment.</li>
+              </ul>
+              <div class="tags"><span>Customer Service</span><span>Teamwork</span><span>Problem Solving</span></div>
+            </div>
+
+            <!-- 2) Volunteer: Event Support Volunteer at Forbes -->
+            <div class="exp-panel" id="exp2">
+              <span class="exp-type" data-ar="تطوع">Volunteer</span>
+              <h3 class="exp-role" data-ar="متطوع دعم الفعاليات">Event Support Volunteer</h3>
+              <p class="exp-meta">
+                <span><i class="ri-building-2-fill"></i> <span data-ar="فوربس">Forbes</span></span>
+                <span><i class="ri-calendar-line"></i> <span data-ar="شتاء 2025">Winter 2025</span></span>
+              </p>
+              <p class="exp-sub" data-ar="ما أنجزته">What I did</p>
+              <ul class="exp-points">
+                <li data-ar="ساعدت في تسجيل الحضور والتحقق من الهويات خلال معرض لفوربس.">Assisted with attendee registration and ID verification during a Forbes exhibition.</li>
+                <li data-ar="دعمت عمليات الفعالية بالمساهمة في جعل عملية التسجيل سلسة ومنظمة.">Supported event operations by helping ensure a smooth and organized registration process.</li>
+                <li data-ar="طورت مهارات التواصل المهني والانتباه للتفاصيل والتنظيم أثناء التعامل مع حضور الفعالية.">Developed professional communication, attention to detail, and organizational skills while interacting with event attendees.</li>
+              </ul>
+              <div class="tags"><span>Registration</span><span>Communication</span><span>Attention to Detail</span></div>
+            </div>
+
+            <!-- 3) Volunteer: Ceremony Assistant at Bath Spa University -->
+            <div class="exp-panel" id="exp3">
+              <span class="exp-type" data-ar="تطوع">Volunteer</span>
+              <h3 class="exp-role" data-ar="مساعد حفل التخرج">Ceremony Assistant</h3>
+              <p class="exp-meta">
+                <span><i class="ri-building-2-fill"></i> <span data-ar="جامعة باث سبا">Bath Spa University</span></span>
+                <span><i class="ri-calendar-line"></i> <span data-ar="صيف 2026">Summer 2026</span></span>
+              </p>
+              <p class="exp-sub" data-ar="ما أنجزته">What I did</p>
+              <ul class="exp-points">
+                <li data-ar="رتبت الطلاب بالترتيب الصحيح لصعودهم إلى المنصة، لضمان سير الحفل وفق الجدول المخطط.">Organized students into the correct order for stage appearances, ensuring the ceremony followed the planned schedule.</li>
+                <li data-ar="نسقت مع زملائي المتطوعين لدعم سير حفل التخرج بسلاسة.">Coordinated with fellow volunteers to support the smooth running of the graduation ceremony.</li>
+                <li data-ar="ساعدت في تجهيز المكان الأساسي وترتيب الأثاث لتهيئة مساحة الفعالية.">Assisted with basic venue setup and furniture arrangement to help prepare the event space.</li>
+              </ul>
+              <div class="tags"><span>Coordination</span><span>Teamwork</span><span>Event Setup</span></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="exp-nav">
+          <button class="exp-arrow" id="exp-prev" aria-label="Previous role"><i class="ri-arrow-left-line"></i></button>
+          <button class="exp-arrow" id="exp-next" aria-label="Next role"><i class="ri-arrow-right-line"></i></button>
+        </div>
+        <p class="exp-hint"><i class="ri-keyboard-fill"></i> <span data-ar="استخدم مفاتيح الأسهم للتنقل">Use your arrow keys to browse</span></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications.
+       Order: Student Entrepreneur, Academic Excellence (the featured, back-to-back one, in the MIDDLE), Business Studies.
+       To add a certificate: copy one whole <article class="cert"> block.
+       The "View credential" links are still placeholders: replace the example.com addresses with your real links. -->
+  <section class="certs page" id="certifications" data-nav="certifications">
+
+    <p class="certs-label" data-ar="شهاداتي">My certifications</p>
+    <h2 class="certs-title" data-ar="شهادات حصلت عليها ولماذا">Certificates I Earned &amp; Why</h2>
+    <p class="certs-text" data-ar="لكل شهادة قصة. هنا ما حصلت عليه، ولماذا سعيت إليه، وما الذي يمكنني فعله بفضله.">
+      Every certificate has a story. Here is what I earned, why I went after it, and what it lets me do.
+    </p>
+
+    <div class="certs-list">
+
+      <!-- 1) Student Entrepreneur -->
+      <article class="cert">
+        <div class="cert-paper">
+          <p class="cert-kicker" data-ar="شهادة تقدير">Certificate of Achievement</p>
+          <h3 class="cert-name" data-ar="رائد أعمال طالب">Student Entrepreneur</h3>
+          <p class="cert-issuer"><span data-ar="صادرة عن">Awarded by</span> <b data-ar="معهد عصر الميتافيرس للتدريب">Metaverse Age Training Institute</b></p>
+
+          <div class="cert-divider"><i class="ri-star-fill"></i></div>
+
+          <p class="cert-why-label" data-ar="لماذا حصلت عليها">Why I earned it</p>
+          <p class="cert-why" data-ar="خططت وأدرت منصة في يوم السوق الجامعي، واستثمرت من مالي الخاص في المواد وبحثت في الطلب في السوق لتحقيق أعلى مبيعات وأرباح. صممت المنصة لتتميز عن المنافسين وتجذب الزبائن. واكتسبت مهارات عملية في أبحاث السوق وإعداد الميزانية واتخاذ القرارات المالية والاستراتيجية التجارية.">Planned and operated a stand at a university market day, investing personal funds into materials and researching market demand to maximize sales and profitability. Designed the stand to differentiate it from competitors and attract customers. Developed practical skills in market research, budgeting, financial decision-making, and business strategy.</p>
+
+          <div class="tags"><span>Market Research</span><span>Budgeting</span><span>Business Strategy</span></div>
+
+          <div class="cert-foot">
+            <div class="cert-date">
+              <b data-ar="مايو 2025">May 2025</b>
+              <span class="cert-line"></span>
+              <small data-ar="التاريخ">Date</small>
+            </div>
+            <div class="cert-seal"><i class="ri-award-fill"></i></div>
+            <a class="cert-link" href="https://example.com/your-credential" target="_blank" rel="noopener noreferrer" data-ar="عرض الشهادة">View credential</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2) Academic Excellence: FEATURED, in the middle. Earned TWICE, back to back (2024 - 2026).
+            The "back-to-back" design = gold ribbon on top + "2024 loop 2026" strip + double seal with a x2 badge. -->
+      <article class="cert cert-featured">
+        <div class="cert-paper">
+
+          <!-- Gold ribbon straddling the top edge of the certificate -->
+          <div class="cert-ribbon"><i class="ri-medal-fill"></i><span data-ar="فائز متتالٍ">Back-to-Back Winner</span></div>
+
+          <p class="cert-kicker" data-ar="وسام التميز">Award of Excellence</p>
+          <h3 class="cert-name" data-ar="التفوق الأكاديمي">Academic Excellence</h3>
+          <p class="cert-issuer"><span data-ar="صادرة عن">Awarded by</span> <b data-ar="معهد عصر الميتافيرس للتدريب">Metaverse Age Training Institute</b></p>
+
+          <div class="cert-divider"><i class="ri-star-fill"></i></div>
+
+          <!-- The loop strip: year - spinning loop - year -->
+          <div class="b2b">
+            <div class="b2b-row">
+              <span class="b2b-chip">2024</span>
+              <i class="ri-loop-left-line b2b-loop"></i>
+              <span class="b2b-chip">2026</span>
+            </div>
+            <p class="b2b-note" data-ar="حصلت عليها مرتين على التوالي">Earned twice, two years in a row</p>
+          </div>
+
+          <p class="cert-why-label" data-ar="لماذا حصلت عليها">Why I earned it</p>
+          <p class="cert-why" data-ar="مُنحت لتحقيقي معدلًا أكاديميًا إجماليًا بنسبة 80% أو أكثر، مما يعكس أداءً أكاديميًا قويًا واستمرارية وتفانيًا في دراستي. ويعكس هذا الإنجاز قدرتي على فهم المفاهيم المعقدة وإدارة مسؤولياتي الدراسية والحفاظ على معايير أكاديمية عالية.">Awarded for achieving an overall academic score of 80% or higher, demonstrating strong academic performance, consistency, and dedication to my studies. This achievement reflects my ability to understand complex concepts, manage academic responsibilities, and maintain high academic standards.</p>
+
+          <div class="tags"><span>Consistency</span><span>Dedication</span><span>Academic Excellence</span></div>
+
+          <div class="cert-foot">
+            <div class="cert-date">
+              <b dir="ltr" data-ar="2024 - 2026">2024 - 2026</b>
+              <span class="cert-line"></span>
+              <small data-ar="التاريخ">Date</small>
+            </div>
+            <!-- Double seal: two overlapping seals = earned twice -->
+            <div class="seal-pair">
+              <div class="cert-seal"><i class="ri-award-fill"></i></div>
+              <div class="cert-seal"><i class="ri-award-fill"></i></div>
+              <span class="seal-x2">×2</span>
+            </div>
+            <a class="cert-link" href="https://example.com/your-credential" target="_blank" rel="noopener noreferrer" data-ar="عرض الشهادة">View credential</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3) Business Studies Coursework Certificate -->
+      <article class="cert">
+        <div class="cert-paper">
+          <p class="cert-kicker" data-ar="شهادة تقدير">Certificate of Achievement</p>
+          <h3 class="cert-name" data-ar="شهادة أعمال دراسات الأعمال">Business Studies Coursework Certificate</h3>
+          <p class="cert-issuer"><span data-ar="صادرة عن">Awarded by</span> <b data-ar="مدرسة أكسفورد دبي">The Oxford School Dubai</b></p>
+
+          <div class="cert-divider"><i class="ri-star-fill"></i></div>
+
+          <p class="cert-why-label" data-ar="لماذا حصلت عليها">Why I earned it</p>
+          <p class="cert-why" data-ar="شاركت في مشروع مؤسسي جماعي لإدارة عمل طلابي لبيع الكوكيز. أدرت الإنتاج عبر توفير مكونات اقتصادية دون المساس بجودة المنتج، وحضّرت الكوكيز، وطبقت إجراءات سلامة الغذاء والنظافة لضمان أن المنتجات آمنة للاستهلاك. واكتسبت مهارات في إدارة الإنتاج وإعداد الميزانية ومراقبة الجودة والعمل الجماعي.">Participated in a group enterprise project, operating a student-run cookie business. Managed production by sourcing cost-effective ingredients without compromising product quality, preparing the cookies, and implementing food safety and hygiene procedures to ensure products were safe for consumption. Developed skills in production management, budgeting, quality control, and teamwork.</p>
+
+          <div class="tags"><span>Production Management</span><span>Quality Control</span><span>Teamwork</span></div>
+
+          <div class="cert-foot">
+            <div class="cert-date">
+              <b data-ar="فبراير 2023">Feb 2023</b>
+              <span class="cert-line"></span>
+              <small data-ar="التاريخ">Date</small>
+            </div>
+            <div class="cert-seal"><i class="ri-award-fill"></i></div>
+            <a class="cert-link" href="https://example.com/your-credential" target="_blank" rel="noopener noreferrer" data-ar="عرض الشهادة">View credential</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact: the LAST page, so it carries the "Back to top" link. -->
+  <section class="contact page" id="contact" data-nav="contact">
+    <a class="back-top" href="#home"><span data-ar="العودة للأعلى">Back to top</span><i class="ri-arrow-up-line"></i></a>
+
+    <p class="contact-label" data-ar="تواصل معي">Contact</p>
+    <h2 class="contact-title" data-ar="لنعمل معًا">Let's Work Together</h2>
+    <p class="contact-text" data-ar="تبحث عن متدرب في الأمن السيبراني، أو لديك مشروع في بالك؟ أرسل لي رسالة وسأردّ خلال 24 ساعة.">
+      Looking for a cyber-security intern, or have a project in mind? Send me a message and I will reply within 24 hours.
+    </p>
+
+    <div class="contact-layout">
+
+      <!-- Left: availability + quick ways to reach me -->
+      <div class="contact-side">
+        <div class="status-pill"><span class="pulse"></span><span data-ar="متاح لفرص التدريب">Open to internships</span></div>
+
+        <!-- Click to copy -->
+        <button class="contact-card" id="copy-email" type="button">
+          <i class="ri-mail-fill"></i>
+          <span class="cc-text"><b data-ar="البريد الإلكتروني">Email</b><small>georgeejbbr@gmail.com</small></span>
+          <i class="ri-file-copy-line cc-action"></i>
+        </button>
+
+        <!-- Click to call (on a phone) -->
+        <a class="contact-card" href="tel:+971523624990">
+          <i class="ri-phone-fill"></i>
+          <span class="cc-text"><b data-ar="الهاتف">Phone</b><small dir="ltr">+971 52 362 4990</small></span>
+          <i class="ri-arrow-right-up-line cc-action"></i>
+        </a>
+
+        <a class="contact-card" href="https://github.com/Grjii" target="_blank" rel="noopener noreferrer">
+          <i class="ri-github-fill"></i>
+          <span class="cc-text"><b>GitHub</b><small>/Grjii</small></span>
+          <i class="ri-arrow-right-up-line cc-action"></i>
+        </a>
+
+        <a class="contact-card" href="https://www.instagram.com/grgejbbr/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-instagram-fill"></i>
+          <span class="cc-text"><b>Instagram</b><small>@grgejbbr</small></span>
+          <i class="ri-arrow-right-up-line cc-action"></i>
+        </a>
+      </div>
+
+      <!-- Right: the message form (opens the visitor's email app, addressed to you) -->
+      <form class="contact-form" id="contact-form" novalidate>
+        <p class="form-q" data-ar="ما موضوع رسالتك؟">What is this about?</p>
+        <div class="topics">
+          <button type="button" class="topic active" data-ar="تدريب">Internship</button>
+          <button type="button" class="topic" data-ar="مشروع">Project</button>
+          <button type="button" class="topic" data-ar="مجرد سلام">Just Saying Hi!</button>
+        </div>
+
+        <label class="field">
+          <input type="text" name="name" placeholder=" " autocomplete="name">
+          <span data-ar="اسمك">Your name</span>
+          <small class="err" data-ar="اكتب اسمك">Enter your name</small>
+        </label>
+
+        <label class="field">
+          <input type="email" name="email" placeholder=" " autocomplete="email">
+          <span data-ar="بريدك الإلكتروني">Your email</span>
+          <small class="err" data-ar="اكتب بريدًا إلكترونيًا صحيحًا">Enter a valid email address</small>
+        </label>
+
+        <label class="field">
+          <textarea id="msg" name="message" placeholder=" " maxlength="500"></textarea>
+          <span data-ar="رسالتك">Your message</span>
+          <small class="err" data-ar="اكتب رسالتك">Write a short message</small>
+          <div class="msg-count"><span id="msg-count">0</span> / 500</div>
+        </label>
+
+        <button class="send" type="submit">
+          <span class="s-idle" data-ar="إرسال الرسالة">Send message</span>
+          <span class="s-sending" data-ar="جارٍ الإرسال">Sending</span>
+          <i class="ri-send-plane-fill"></i>
+        </button>
+
+        <!-- Covers the form after sending -->
+        <div class="form-done" role="status">
+          <i class="ri-check-line"></i>
+          <h3 data-ar="تم إرسال رسالتك">Message sent</h3>
+          <p data-ar="شكرًا لتواصلك. سأردّ عليك خلال 24 ساعة.">Thanks for reaching out. I will reply within 24 hours.</p>
+          <button class="again" id="send-again" type="button" data-ar="إرسال رسالة أخرى">Send another</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- the little "Email copied" message -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
